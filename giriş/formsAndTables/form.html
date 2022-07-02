@@ -43,9 +43,10 @@
                         </tr>
                         <tr>
                             <td>Favorite Music Genre</td>
-                            <td>:<input type="radio" name="genre" id="rock" value="rock"><label for="rock">Rock</label><input
-                                    type="radio" name="genre" id="metal" value="metal" required><label for="metal">Metal</label><input
-                                    type="radio" name="genre" id="pop" value="pop"><label for="pop">Pop</label></td>
+                            <td>:<input type="radio" name="genre" id="rock" value="rock"><label
+                                    for="rock">Rock</label><input type="radio" name="genre" id="metal" value="metal"
+                                    required><label for="metal">Metal</label><input type="radio" name="genre" id="pop"
+                                    value=""><label for="pop">Pop</label></td>
                         </tr>
                         <tr></tr>
                         <tr>
@@ -64,6 +65,32 @@
             <button type="submit">Search</button>
         </form>
     </main>
+    <div>
+        <form action="/swş">
+            <h1>Race Registration!</h1>
+            <p>
+                <label for="name">First Name</label> <input type="text" required name="name" id="name">
+                <label for="lastName">Last Name</label> <input type="text" required name="lastName" id="lastName">
+            </p>
+            <p>Select a Race:</p>
+            <div>
+                <input type="radio" name="race" id="funrun5k" value="funrun5k"><label for="funrun5k">Fun Run 5k</label><br>
+                <input type="radio" name="race" id="halfmar" value="halfmar" required><label for="halfmar">Half Marathon</label><br>
+                <input type="radio" name="race" id="fullmar" value="fullmar"><label for="fullmar">Full Marathon</label>
+            </div>
+            <div>
+                <label for="mail">Email</label> <input required type="email" name="mail" id="mail">
+                <label for="password">Password</label> <input required type="password" name="password" id="password"><br>
+                <label for="age">Select age group</label>
+                <select name="age" id="age">
+                    <option value="18-">Under 18</option>
+                    <option value="18-25">18-25</option>
+                    <option value="25-50">25-50</option>
+                    <option value="50+">Over 50</option>
+                </select><br>
+                <button type="submit">Register!</button>
+        </form>
+    </div>
 
 </body>
 
