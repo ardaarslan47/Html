@@ -14,6 +14,7 @@
         tr {
             text-align: center;
         }
+
         table {
             border-style: dashed;
         }
@@ -26,28 +27,42 @@
         <div>
             <h1>Form</h1>
             <table>
-                <form action="">
-                    <tr>
-                        <td>Ad</td>
-                        <td>:<input type="text" required></td>
-                    </tr>
-                    <tr>
-                        <td>Soyad</td>
-                        <td>:<input type="text" required></td>
-                    </tr>
-                    <tr>
-                        <td>Favorite Music Genre</td>
-                        <td>:<input type="radio" name="genre">Rock<input type="radio" name="genre" required>Metal<input
-                                type="radio" name="genre">Pop</td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" value="Gönder"></td>
-                    </tr>
+                <form action="/submit">
+                    <table>
+                        <tr>
+                            <td>Ad</td>
+                            <td>:<input type="text" required placeholder="Ad" name="ad"></td>
+                        </tr>
+                        <tr>
+                            <td>Soyad</td>
+                            <td>:<input type="text" required placeholder="Soyad" name="soyad"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td>:<input type="email" required placeholder="E-mail" name="mail"></td>
+                        </tr>
+                        <tr>
+                            <td>Favorite Music Genre</td>
+                            <td>:<input type="radio" name="genre" id="rock" value="rock"><label for="rock">Rock</label><input
+                                    type="radio" name="genre" id="metal" value="metal" required><label for="metal">Metal</label><input
+                                    type="radio" name="genre" id="pop" value="pop"><label for="pop">Pop</label></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Gönder"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="reset">Sıfırla</button></td>
+                        </tr>
+                    </table>
                 </form>
 
             </table>
         </div>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" id="search">
+            <button type="submit">Search</button>
+        </form>
     </main>
 
 </body>
